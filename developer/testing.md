@@ -1,6 +1,15 @@
 Testing (since v1.2)
 ====================
 
+## Testing basics
+Testing in Humhub/Yii extends the paradigm of unit testing. I.e. testing models and controllers is complemented by functional and acceptance tests. Acceptance tests cover scenarios from a user's perspective: Opening the browser, accessing the site, click links and buttons etc. This behaviour can be simulated. Therefore a webserver as well as an automated browser instance are necessary (see below).
+
+Functional tests are similar to acceptance tests but run without a running webserver. 
+
+Codeception allows integrated testing with acceptance, functional and unit tests.
+
+Details: [Codeception](http://codeception.com/docs/01-Introduction)
+
 ## Test Environment Setup
 
 -  Install codeception ([http://codeception.com/install](http://codeception.com/install))
@@ -152,6 +161,8 @@ codecept run codeception/acceptance/TestCest:testFunction
 ```
 
 ### Run acceptance tests
+Phantom.js and Selenium are needed as servers to run acceptance tests on your system. If your already installed webserver is listening on port 8080 you do not need to start the test server. You can simply run codeception but selenium or phantomjs must be running.
+
 #### with phantomjs
 
 - Run phantomjs server (is installed with composer update)
