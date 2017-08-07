@@ -8,6 +8,8 @@ Functional tests are similar to acceptance tests but run without a running webse
 
 Codeception allows integrated testing with acceptance, functional and unit tests.
 
+*ATTENTION: Some of the test libraries are developed for use with PHP 7 only*
+
 Details: [Codeception](http://codeception.com/docs/01-Introduction)
 
 ## Test Environment Setup
