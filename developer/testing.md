@@ -54,10 +54,6 @@ Configure the database connection for your test environment in `@humhub/tests/co
 
 - Install test environment:
 
-```cd protected/humhub/tests/codeception/bin```
-
-```php yii migrate/up --includeModuleMigrations=1 --interactive=0```
-
 ```php yii installer/auto```
 
 - Set `HUMHUB_PATH` system variable
