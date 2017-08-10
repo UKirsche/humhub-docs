@@ -8,9 +8,12 @@ Instead of embeding inline script blocks into your views, it's highly recommende
 
 ### Publish a Module Asset
 
-Your script files should reside within the `resources/js` folder of your humhub module and should ideally be appended at the bottom of the document.
+Your script files should reside within the `resources/js` folder of your humhub module and should ideally be appended at the bottom of the document. 
 
 In order to add a Javascript module file to your view, you should use a [Asset Bundle](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html) class residing within the `assets` directory of your module. By setting `public $jsOptions = ['position' => \yii\web\View::POS_END];`, your assets will be appended to the end of the document body. This will assure all core modules are already registered.
+
+Be careful though, when you want to edit your files in `resources/js`. All asset files are bundled and then copiedto the `@webroot`-folder of your application, when they register in the view for the first time (see below). In order to be able the edit them in your module folder you have to force the `AssetManager` of yii to copy the assets all the time to the `@webroot`-folder. This is done with `$publishOptions ` member in the AssetBundle class as shown below.
+
 
 
 ```php
@@ -20,6 +23,9 @@ use yii\web\AssetBundle;
 
 class ExampleAsset extends AssetBundle
 {
+    public $publishOptions = [
+        'forceCopy' => true
+    ];
     public $jsOptions = ['position' => \yii\web\View::POS_END];
     public $sourcePath = '@example/resources';
     public $js = [
