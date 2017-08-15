@@ -159,7 +159,9 @@ codecept run codeception/acceptance/TestCest:testFunction
 ```
 
 ### Run acceptance tests
-Phantom.js and Selenium are needed as servers to run acceptance tests on your system. If your already installed webserver is listening on port 8080 you do not need to start the test server. You can simply run codeception but selenium or phantomjs must be running.
+Phantom.js and Selenium are needed as servers to run acceptance tests on your system. You can simply run codeception but selenium or phantomjs must be running.
+
+Hint: If your already installed webserver is listening on port 8080 you do not need to start the test server, because Humhub tests are run on port 8080. If needed, adjustments can be made in the `codeception.yml`  file of our `test` folder (`test-entry-url`) and the `acceptance.suite.yml` file.  
 
 #### with phantomjs
 
