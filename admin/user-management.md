@@ -33,7 +33,7 @@ This option allows guest users to view public accessible content.
 Instead of showing the initial login screen, non-authenticated users will be redirected to the dashboard containing all public contents.
 Furthermore, guest users will also have access to the directory.
 - **Anonymous users can register:**
-If this option is enabled, anonymous users will be able to send registration requests. Otherwise users can only join your network by receiving an invite or being added in the administration view.
+If this option is enabled, anonymous users will be able to send registration requests. Otherwise, users can only join your network by receiving an invite or being added in the administration view.
 - **Members can invite external users by email**:
 If this option is enabled, all members of your network will be able to invite new users by email.
 - **Require group admin approval after registration**:
@@ -46,7 +46,7 @@ This selection sets the default group for all new users. If 'None' is selected t
 select a group within the registration form (Only if the group admin approval is activated).
 - **Default user idle timeout, auto-logout (in seconds, optional):**
 Sets the time in seconds before inactive user sessions are closed, min value 20 seconds, default 1400seconds/24minutes.
-- **Default user profile visiblity**:
+- **Default user profile visibility**:
 Sets the default visibility of user profiles. This is only applicable when limited access for non-authenticated users is enabled.
 Note: Changes of this selection will only affect new users. It can either be set to _members only_ or _members and guests_.
 

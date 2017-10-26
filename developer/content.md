@@ -131,7 +131,7 @@ TBD
 
 Each Content ActiveRecord (derived from [[\humhub\modules\content\components\ContentActiveRecord]]) is automatically linked to a [[humhub\modules\content\models\Content]] record via the *content* attribute. 
 
-This Content record holds all neccessary information and provides common methods:
+This Content record holds all necessary information and provides common methods:
 
 - ContentContainer which the Content belongs to
 - Meta Information (created_at, created_by, updated_at, updated_by)

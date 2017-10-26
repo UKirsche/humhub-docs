@@ -3,14 +3,14 @@ Activities
 
 Activity instances are created for special events in the context of a [[humhub\modules\content\models\ContentContainer|ContentContainer]] like the creation of new content.
 
-Contrary to notifications - activities are always bound to a [[humhub\modules\content\models\ContentContainer|ContentContainer]], so they are not especially linked against a user or a given set of them.
-Besides the link to the [[humhub\modules\content\models\ContentContainer|ContentContainer]] - an activity can also be assigned with a Content or ContentAddon and automatically inherits some content attributes such as visiblity.
+Contrary to notifications - activities are always bound to a [[humhub\modules\content\models\ContentContainer|ContentContainer]], so they are not especially linked to a user or a given set of them.
+Besides the link to the [[humhub\modules\content\models\ContentContainer|ContentContainer]] - an activity can also be assigned to a Content or ContentAddon and automatically inherits some content attributes such as visibility.
 
 ## Implement a Custom Activity
 
 ### Create Class & View
 
-Create a folder ** activities ** in your module and a new class ** SomethingHappend ** 
+Create a folder **activities** in your module and a new class **SomethingHappend** 
 
 ```php
 <?php
@@ -30,9 +30,9 @@ class SomethingHappend extends BaseActivity
 ?>
 ```
 
-By default activity views should be located inside a subfolder named ** views ** where your activity class is located (e.g. /modules/examples/activities/views/).
+By default activity views should be located inside a subfolder named **views** where your activity class is located (e.g. /modules/examples/activities/views/).
 
-Example view file ** somethingHappend.php **:
+Example view file **somethingHappend.php**:
 
 ```php
 <?php
@@ -45,7 +45,7 @@ echo Yii::t('ExampleModule.views_notifications_newLike', "%someUser% did somethi
 ?>
 ```
 
-If you require a different view for mails, you have to create a  ** mail ** folder in your views directory.  
+If you require a different view for mails, you have to create a  **mail** folder in your views directory.  
 
 ### Save an Activity
 
