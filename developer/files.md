@@ -41,7 +41,7 @@ When using lazy file mapping, the files are uploaded by Javascript (see Javascri
 Typical workflow:
 1. File upload (handled by Javascript)
 2. Store successfully uploaded file guids in a hidden form field (comma separated)
-3. After saving the form in controller action, assign previously collected file guids to the record.
+3. After saving the form in a controller action, assign previously collected file guids to the record.
 
 Example (Step 3):
 
