@@ -132,7 +132,7 @@ Microsoft Live
 
 In order to use Microsoft Live OAuth you must register your application at <https://account.live.com/developers/applications>.
 
-Also add a new Platform and allow following Redirect URI.
+Also, add a new Platform and allow following Redirect URI.
 
 - https://domain/path-to-humhub/user/auth/external (With clean urls enabled)
 - https://domain/path-to-humhub/index.php (Without clean urls)
